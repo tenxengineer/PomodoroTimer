@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <div class="progres-circle">
+                <svg>
+                    <circle cx="90" cy="90" r="85"></circle>
+                    <circle id="progress" cx="90" cy="95" r="85"></circle>
+                </svg>
+                <div id="time-left">25:00</div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+        </div>
+
+        <!-- Custom Time Settings -->
+        <div class="settings">
+            <label>Work (minutes): <input type="number" id="work-duration" value="25"></label>
+            <label>Break (minutes): <input type="number" id="break-duration" value="5"></label>
+        </div>
+    </div>
+
+    <!-- Add sound notification -->
+     <audio id="alarm-sound" src="https://freesound.org/data/previews/316/316847_4939433-lq.mp3"></audio>
+     <script src="script.js"></script>
+    
+</body>
+</html>

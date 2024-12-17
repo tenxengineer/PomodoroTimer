@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #282c34;
+    color: #fff;
+}
+.container {
+    text-align: center;
+    background: #3c4049;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #61dafb;
+}
+/* Timer Circle */
+.timer {
+    position: relative;
+    margin: 20px auto;
+}
+.progress-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+svg {
+    width: 180px;
+    height: 180px;
+    transform: rotate(-90deg);
+}
+.circle {
+    fill: none;
+    stroke-width: 8;
+    stroke: #444;
+}
+circle#progress {
+    stroke: #61dafb;
+    stroke-linecap: round;
+    stroke-dasharray: 534;
+    stroke-dashoffset: 534;
+    transition: stroke-dashoffset 1s linear;
+}
+/* Buttons */
+.controls button {
+    background: #61dafb;
+    border: none;
+    color: #282c34;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.controls button:hover {
+    background: #4fa3d1;
+}
+.settings {
+    margin-top: 20px;
+}
+.settings label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.settings input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
