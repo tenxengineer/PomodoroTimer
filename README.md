@@ -23,7 +23,7 @@ A fully customizable **Pomodoro Timer** built with **HTML, CSS, and JavaScript**
 ### **How to Run**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/advanced-pomodoro-timer.git
+   git clone https://github.com/tenxengineer/PomodoroTimer.git
    ```
 2. Open `index.html` in any modern browser.
 
